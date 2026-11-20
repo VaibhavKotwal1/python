@@ -1,0 +1,12 @@
+#Q1. Function Scope and Built-in Functions (2 Marks)
+def analyze_numbers(numbers):
+ maximum = max(numbers)
+ minimum = min(numbers)
+ total = sum(numbers)
+ average = total / len(numbers)
+ print("Maximum =", maximum)
+ print("Minimum =", minimum)
+ print("Sum =", total)
+ print("Average =", int(average) if average.is_integer() else average)
+sample_list = [10, 20, 30, 40]
+analyze_numbers(sample_list)
